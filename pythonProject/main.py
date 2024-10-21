@@ -78,7 +78,6 @@ def train_perceptron(train_X, train_Y, test_X, test_Y, epochs=200, batch_size=10
         print(f"Epoch {epoch + 1}/{epochs} - Loss: {loss_train:.4f} - Test Accuracy: {test_accuracy:.4f}")
 
 
-# Convert labels to one-hot and train the model
 train_Y_one_hot = one_hot_encode(train_Y)
 test_Y_one_hot = one_hot_encode(test_Y)
 print("Shape of train_Y_one_hot:", train_Y_one_hot.shape)
